@@ -139,6 +139,7 @@ TARGET_SCREEN_HEIGHT := 1612
 # TWRP Configuration
 TW_EXTRA_LANGUAGES := true
 TARGET_USES_MKE2FS := true
+RECOVERY_SDCARD_ON_DATA := true
 
 TW_FRAMERATE := 60
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
