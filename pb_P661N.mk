@@ -29,7 +29,7 @@ PRODUCT_MANUFACTURER := ITEL
 
 PRODUCT_GMS_CLIENTID_BASE := android-transsion
 
-# Hide Reflash TWRP & FUSE passthrough
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.twrp.vendor_boot=true \
-    persist.sys.fuse.passthrough.enable=true
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="Itel/pb_P661N/P661N:13/SD2A.220601.004.B2/nino08802061117:eng/test-keys"
+
+BUILD_FINGERPRINT := Itel/P661N-GL/itel-P661N:13/TP1A.220624.014/250106V612:user/release-keys
