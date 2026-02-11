@@ -16,13 +16,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from P661N device
 $(call inherit-product, device/itel/P661N/device.mk)
 
 PRODUCT_DEVICE := P661N
-PRODUCT_NAME := twrp_P661N
+PRODUCT_NAME := pb_P661N
 PRODUCT_BRAND := Itel
 PRODUCT_MODEL := itel P55 5G
 PRODUCT_MANUFACTURER := ITEL
