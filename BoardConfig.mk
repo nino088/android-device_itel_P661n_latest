@@ -165,7 +165,7 @@ TW_INCLUDE_LPTOOLS := true
 TW_EXCLUDE_LPDUMP := true
 TW_EXCLUDE_APEX := true
 
-# no recovery partition
+# No recovery partition
 TW_HAS_NO_RECOVERY_PARTITION := true
 
 # StatusBar
@@ -192,31 +192,3 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 # Version
 TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
-
-# Recovery additional features
-OF_LOOP_DEVICE_ERRORS_TO_LOG := 1
-OF_ENABLE_LPTOOLS := 1
-OF_USE_LZ4_COMPRESSION := true
-OF_DISPLAY_FORMAT_FILESYSTEMS_DEBUG_INFO := 1
-
-# OTA
-OF_DISABLE_OTA_MENU := 1
-OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
-OF_SUPPORT_VBMETA_AVB2_PATCHING := 1
-
-# Maintainer specific settings
-OF_MAINTAINER := nino
-
-# SkyHawk Specific Build Flags
-SHRP_PATH := $(DEVICE_PATH)
-SHRP_OFFICIAL := true
-SHRP_MAINTAINER := "NINO"
-SHRP_DEVICE_CODE := P661N
-SHRP_REC_TYPE := Treble
-SHRP_DEVICE_TYPE := A/B
-SHRP_NOTCH := true
-SHRP_DARK := true
-SHRP_INTERNAL := /sdcard
-SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
-SHRP_REC := /dev/block/bootdevice/by-name/vendor_boot
