@@ -18,3 +18,6 @@ ro.hardware.gatekeeper=trustonic
 
 # Keymaster
 keymaster_ver=4.1
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
