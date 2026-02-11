@@ -7,3 +7,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/pb_P661N.mk
+
+COMMON_LUNCH_CHOICES := \
+    pb_P661N-userdebug
