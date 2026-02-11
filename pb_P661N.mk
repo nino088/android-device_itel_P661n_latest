@@ -5,7 +5,7 @@
 #
 
 # Inherit from P661N device
-$(call inherit-product, device/itel/P661n/device.mk)
+$(call inherit-product, device/itel/P661N/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
