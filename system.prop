@@ -27,4 +27,4 @@ persist.sys.timezone="Africa/lagos"
 
 # OTG
 persist.sys.isUsbOtgEnabled=true
-sys.usb.controller=a600000.dwc3
+sys.usb.controller=11201000
