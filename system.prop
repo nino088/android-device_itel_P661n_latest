@@ -22,5 +22,5 @@ keymaster_ver=4.1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# OGG
+# OTG
 persist.sys.isUsbOtgEnabled=true
