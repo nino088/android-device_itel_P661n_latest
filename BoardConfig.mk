@@ -200,3 +200,20 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 # Version
 TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+
+#SHRP-specific lines
+SHRP_PATH := device/itel/P661N
+SHRP_MAINTAINER := NINO
+SHRP_DEVICE_CODE := P661N
+SHRP_OFFICIAL := true
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /sdcard1
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_FLASH_MAX_BRIGHTNESS := 255
+SHRP_REC_TYPE := SAR
+SHRP_REC := /dev/block/bootdevice/by-name/vendor_boot
+SHRP_DEVICE_TYPE := A/B
+SHRP_EXPRESS := true
+SHRP_EXPRESS_USE_DATA := true
+SHRP_DARK := true
