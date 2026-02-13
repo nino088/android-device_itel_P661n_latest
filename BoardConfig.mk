@@ -181,13 +181,7 @@ TW_INCLUDE_FASTBOOTD := true
 
 # USB Configuration
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-
-# USB OTG
-TW_USB_STORAGE := true
-TW_USE_EXTERNAL_STORAGE := true
-RECOVERY_SDCARD_ON_DATA := true
-BOARD_ROOT_EXTRA_FOLDERS += usb-otg
-# BOARD_ROOT_EXTRA_FOLDERS += external_sd
+TW_NO_USB_STORAGE := false
 
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
@@ -199,3 +193,7 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 # Version
 TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
+
+# PB Torch
+PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+PB_TORCH_MAX_BRIGHTNESS := 1
