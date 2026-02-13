@@ -9,6 +9,7 @@ DEVICE_PATH := device/itel/P661N
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+SOONG_ALLOW_MISSING_DEPENDENCIES=true
 
 # Architecture
 TARGET_ARCH := arm64
