@@ -24,3 +24,6 @@ persist.sys.fuse.passthrough.enable=true
 
 # Timezone
 persist.sys.timezone="Africa/lagos"
+
+# OTG
+persist.sys.isUsbOtgEnabled=true
