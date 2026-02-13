@@ -33,7 +33,8 @@
     export FOX_ENABLE_APP_MANAGER=1
     export FOX_SETTINGS_ROOT_DIRECTORY=/persist/OFRP
     export FOX_RESET_SETTINGS=1
-
+    export OF_DEFAULT_KEYMASTER_VERSION=4.1
+    
     #OFR binary files
     export FOX_USE_BASH_SHELL=1
     export FOX_USE_NANO_EDITOR=1
