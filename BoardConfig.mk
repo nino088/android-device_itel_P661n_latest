@@ -219,3 +219,15 @@ SHRP_DEVICE_TYPE := A/B
 SHRP_EXPRESS := true
 SHRP_EXPRESS_USE_DATA := true
 SHRP_DARK := true
+
+# Custom led paths for flashlight
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/torch/torch/torch_level
+SHRP_FONP_2 := /sys/class/leds/lcd-backlight//brightness
+SHRP_FONP_3 := /sys/class/leds/lcd-backlight/led_mode
+SHRP_FONP_4 := /sys/devices/virtual/torch/torch/torch_level
+SHRP_FONP_5 :=/sys/class/flashlight_core/flashlight/flashlight_torch
+
+# Max brightness of flashlight
+SHRP_FLASH_MAX_BRIGHTNESS := 4095
+
