@@ -212,13 +212,12 @@ SHRP_INTERNAL := /sdcard
 SHRP_EXTERNAL := /sdcard1
 SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
-SHRP_FLASH_MAX_BRIGHTNESS := 255
 SHRP_REC_TYPE := SAR
 SHRP_REC := /dev/block/bootdevice/by-name/vendor_boot
 SHRP_DEVICE_TYPE := A/B
 SHRP_EXPRESS := true
+SHRP_DARK := false
 SHRP_EXPRESS_USE_DATA := true
-SHRP_DARK := true
 
 # Custom led paths for flashlight
 SHRP_CUSTOM_FLASHLIGHT := true
