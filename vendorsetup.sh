@@ -57,6 +57,7 @@
     export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
     #Flashlight
+	export OF_FLASHLIGHT_ENABLE=1
     export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
     export OF_FL_PATH2=""
 
