@@ -35,6 +35,12 @@
     export FOX_RESET_SETTINGS=1
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
     export FOX_BUILD_TYPE="Stable"
+
+    # lz4 compression
+	export OF_USE_LZ4_COMPRESSION
+
+    # build all the partition tools
+	export OF_ENABLE_ALL_PARTITION_TOOLS=1
     
     #OFR binary files
     export FOX_USE_BASH_SHELL=1
