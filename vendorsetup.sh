@@ -34,6 +34,7 @@
     export FOX_SETTINGS_ROOT_DIRECTORY=/persist/OFRP
     export FOX_RESET_SETTINGS=1
     export OF_DEFAULT_KEYMASTER_VERSION=4.1
+    export FOX_BUILD_TYPE="Stable"
     
     #OFR binary files
     export FOX_USE_BASH_SHELL=1
@@ -50,10 +51,10 @@
     export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
     #Flashlight
-    export OF_FL_PATH1=/sys/class/leds/flashlight
-    export OF_FL_PATH2=/sys/class/leds/torch-light0
+    export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
+    export OF_FL_PATH2=""
 
-# Haptics patch - simple apply, no checks
+    # Haptics patch - simple apply, no checks
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     PATCH_FILE="$SCRIPT_DIR/patches/0001-Add-regulator-vibrator-haptics-support.patch"
     WORKSPACE_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
