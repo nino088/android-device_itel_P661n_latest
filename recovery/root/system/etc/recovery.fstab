@@ -25,6 +25,9 @@ vendor                                                 /vendor                ex
 # Use tranfs as cache
 /dev/block/by-name/tranfs	/cache			ext4		noatime,nosuid,nodev,discard			wait,check,formattable											wait,check,formattable
 
+# Persist
+/dev/block/by-name/persist /mnt/vendor/persist ext4 noatime,nosuid,nodev,noauto_da_alloc,commit=1,nodelalloc wait,check,formattable
+
 # OTG
 /dev/block/mmcblk1p1                     /external_sd        auto    defaults    defaults
 /dev/block/sda1                          /usb-otg            auto    defaults    defaults
