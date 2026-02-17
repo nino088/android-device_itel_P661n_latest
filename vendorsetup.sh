@@ -61,6 +61,11 @@
     export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
     export OF_FL_PATH2=""
 
+	 # KernelSU / SukiSu support
+   export FOX_ENABLE_KERNELSU_SUPPORT=1
+   export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
+   export FOX_ENABLE_SUKISU_SUPPORT=1
+ 
     # Haptics patch - simple apply, no checks
     SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
     PATCH_FILE="$SCRIPT_DIR/patches/0001-Add-regulator-vibrator-haptics-support.patch"
@@ -68,12 +73,3 @@
 
     cd "$WORKSPACE_ROOT"
     git apply "$PATCH_FILE" 2>/dev/null || true
-
-	F=$(find "device" -maxdepth 2 -name "elish")
-	# 修改启动画面背景色为#000000
-	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
-	sed -i 's/value="#D34E38"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
-	sed -i 's/value="#FF8038"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
-
-	echo -e "\x1b[96melish: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
-	
