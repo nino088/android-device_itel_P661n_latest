@@ -20,7 +20,7 @@ on:
       DEVICE_TREE:
         description: 'Custom Recovery Tree URL'
         required: true
-        default: 'https://github.com/enter_username/repo_name'
+        default: 'https://github.com/nino088/android-device_itel_P661n_latest'
       DEVICE_TREE_BRANCH:
         description: 'Device Tree Branch (optional)'
         required: false
