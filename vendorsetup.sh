@@ -68,3 +68,12 @@
 
     cd "$WORKSPACE_ROOT"
     git apply "$PATCH_FILE" 2>/dev/null || true
+
+	F=$(find "device" -maxdepth 2 -name "elish")
+	# 修改启动画面背景色为#000000
+	\cp -fp bootable/recovery/gui/theme/portrait_hdpi/splash.xml "$F"/recovery/root/twres/splash.xml
+	sed -i 's/value="#D34E38"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
+	sed -i 's/value="#FF8038"/value="#000000"/g' "$F"/recovery/root/twres/splash.xml
+
+	echo -e "\x1b[96melish: 当你看到这个消息的时候，所有的OrangeFox Var已经添加完毕！\x1b[m"
+	
