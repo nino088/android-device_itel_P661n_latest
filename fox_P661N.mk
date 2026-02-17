@@ -38,3 +38,7 @@ OF_SUPPORT_VBMETA_AVB2_PATCHING := 1
 
 # Maintainer specific settings
 OF_MAINTAINER := nino
+
+# Flashlight
+OF_FL_PATH1	:= /tmp/torch_level
+OF_USE_GREEN_LED := 0
