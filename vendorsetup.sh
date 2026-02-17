@@ -56,11 +56,6 @@
     export FOX_VIRTUAL_AB_DEVICE=1
     export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
 
-    #Flashlight
-	export OF_FLASHLIGHT_ENABLE=1
-    export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
-    export OF_FL_PATH2=""
-
 	 # KernelSU / SukiSu support
    export FOX_ENABLE_KERNELSU_SUPPORT=1
    export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
