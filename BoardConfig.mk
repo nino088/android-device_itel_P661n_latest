@@ -195,5 +195,7 @@ TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 # PB Torch
-PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_core"
 PB_TORCH_MAX_BRIGHTNESS := 1
+PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_core"
+PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
+
