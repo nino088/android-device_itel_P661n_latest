@@ -149,7 +149,6 @@ TARGET_SCREEN_HEIGHT := 1612
 # TWRP Configuration
 TW_EXTRA_LANGUAGES := true
 TARGET_USES_MKE2FS := true
-RECOVERY_SDCARD_ON_DATA = true
 TW_NO_SCREEN_BLANK := true
 
 TW_FRAMERATE := 60
@@ -179,9 +178,11 @@ TW_CUSTOM_CPU_POS := 270
 # FastbootD
 TW_INCLUDE_FASTBOOTD := true
 
-# USB Configuration
+# USB
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-TW_NO_USB_STORAGE := false
+
+# Storage
+RECOVERY_SDCARD_ON_DATA := true
 
 # Vendor Boot
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
@@ -195,7 +196,6 @@ TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 # PB Torch
-PB_TORCH_MAX_BRIGHTNESS := 1
 PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_core"
 PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
 
