@@ -179,13 +179,14 @@ TW_CUSTOM_CPU_POS := 270
 # FastbootD
 TW_INCLUDE_FASTBOOTD := true
 
-# USB Configuration
+# Storage / OTG
+TW_HAS_OTG := true
+RECOVERY_SDCARD_ON_DATA := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 TW_EXCLUDE_DEFAULT_USB_INIT := true
-
-# USB OTG
 TW_USB_STORAGE := true
-TW_USB_OTG_STORAGE =: true
-TW_USE_EXTERNAL_STORAGE := true
+TW_USB_OTG_STORAGE =: tru
+TW-USES_EXTERNAL_STOREAGE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_ROOT_EXTRA_FOLDERS += usb-otg
 BOARD_ROOT_EXTRA_FOLDERS += external_sd
