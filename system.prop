@@ -19,6 +19,11 @@ ro.hardware.gatekeeper=trustonic
 # Keymaster
 keymaster_ver=4.1
 
+# Storage
+external_storage.projid.enabled=1
+external_storage.casefold.enabled=1
+external_storage.sdcardfs.enabled=0
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
