@@ -27,5 +27,6 @@ external_storage.sdcardfs.enabled=0
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# OTG
+# USB
+vendor.usb.use_ffs_mtp=1
 persist.sys.isUsbOtgEnabled=true
