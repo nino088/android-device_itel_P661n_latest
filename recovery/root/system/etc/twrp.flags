@@ -46,9 +46,9 @@
 /spmfw			emmc		/dev/block/by-name/spmfw										flags=display=spmfw;backup
 /tee			emmc		/dev/block/by-name/tee											flags=display=tee;backup
 
-# Removable Storage
-/external_sd		auto		/dev/block/mmcblk1p1				/dev/block/mmcblk0p1					flags=display="Micro SD" Card";storage;wipeingui;removable;backup=0
-/usb_otg		vfat		/dev/block/sdd1					/dev/block/sdd		/dev/block/sdd1			flags=display="USB-OTG";storage;wipeingui;removable;backup=0
+# Removable Partitions
+/external_sd              auto     /dev/block/mmcblk0p1         /dev/block/mmcblk0   flags=display="Micro SD Card";storage;wipeingui;removable
+/usb_otg                  auto     /dev/block/sdd              /dev/block/sdd1     flags=display="USB-OTG";storage;wipeingui;removable;backup=0
 
 # Flashable logical partitions
 /system_image	       emmc		/dev/block/mapper/system									flags=display="system";backup;flashimg
