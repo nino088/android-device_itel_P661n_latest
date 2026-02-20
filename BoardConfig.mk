@@ -150,6 +150,8 @@ TARGET_SCREEN_HEIGHT := 1612
 TW_EXTRA_LANGUAGES := true
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_BLANK := true
+TW_HAS_OTG := true
+RECOVERY_SDCARD_ON_DATA := true
 
 TW_FRAMERATE := 60
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -169,6 +171,7 @@ TW_EXCLUDE_APEX := true
 
 # No recovery partition
 TW_HAS_NO_RECOVERY_PARTITION := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
 
 # StatusBar
 TW_STATUS_ICONS_ALIGN := center
@@ -178,10 +181,7 @@ TW_CUSTOM_CPU_POS := 270
 # FastbootD
 TW_INCLUDE_FASTBOOTD := true
 
-# Storage / OTG
-TW_HAS_OTG := true
-RECOVERY_SDCARD_ON_DATA := true
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
+# Use our own USB config
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 
 # Vendor Boot
