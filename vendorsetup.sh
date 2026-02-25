@@ -50,7 +50,10 @@
     export FOX_USE_XZ_UTILS=1
     export FOX_ASH_IS_BASH=1
     export OF_ENABLE_LPTOOLS=1
-
+ 
+   # don't spam the console with loop errors
+	export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
+	
     #OTA
     export FOX_AB_DEVICE=1
     export FOX_VIRTUAL_AB_DEVICE=1
