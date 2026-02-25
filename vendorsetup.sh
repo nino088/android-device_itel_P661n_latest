@@ -37,7 +37,7 @@
     export FOX_BUILD_TYPE="Stable"
 
     # lz4 compression
-	export OF_USE_LZ4_COMPRESSION
+	export OF_USE_LZ4_COMPRESSION=1
 
     # build all the partition tools
 	export OF_ENABLE_ALL_PARTITION_TOOLS=1
