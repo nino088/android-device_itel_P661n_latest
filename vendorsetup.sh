@@ -33,6 +33,9 @@ export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
 
 export OF_USE_LZ4_COMPRESSION=true
 
+# Custom time
+export FOX_DEFAULT_TIMEZONE="WAT+1"
+
 # Vendor_boot
 export FOX_RECOVERY_VENDOR_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
 export FOX_VENDOR_BOOT_RECOVERY=1
