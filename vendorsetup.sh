@@ -34,6 +34,9 @@ export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
 
 export OF_USE_LZ4_COMPRESSION=true
 
+# Vendor_boot
+export FOX_RECOVERY_VENDOR_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
+
 export OF_SCREEN_H=2400
 export OF_STATUS_H=95
 export OF_STATUS_INDENT_LEFT=48
