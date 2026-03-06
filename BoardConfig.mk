@@ -199,4 +199,4 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 # PB Torch
 PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_core"
 PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
-
+PB_TORCH_MAX_BRIGHTNESS := 1
