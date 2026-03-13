@@ -202,5 +202,6 @@ TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 # PB Torch
 PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
 TW_TORCH_PATH := "/sys/class/torch/torch/torch_level"
+PB_TORCH_PATH1 := $(DEVICE_PATH)/recover/root/sys/class/torch/torch/torch_level
 TW_MAX_BRIGHTNESS := 1
 PB_MAX_BRIGHTNESS := 1
