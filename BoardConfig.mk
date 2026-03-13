@@ -156,7 +156,6 @@ TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_FRAMERATE := 60
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_THEME := portrait_hdpi
 
@@ -220,13 +219,11 @@ SHRP_DARK := false
 SHRP_EXPRESS_USE_DATA := true
 
 # Custom led paths for flashlight
+SHRP_MAX_BRIGHTNESS := 1
 SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP_1 := /sys/class/torch/torch/torch_level
-SHRP_FONP_2 := /sys/class/leds/lcd-backlight//brightness
-SHRP_FONP_3 := /sys/class/leds/lcd-backlight/led_mode
-SHRP_FONP_4 := /sys/devices/virtual/torch/torch/torch_level
-SHRP_FONP_5 :=/sys/class/flashlight_core/flashlight/flashlight_torch
-
-# Max brightness of flashlight
-SHRP_FLASH_MAX_BRIGHTNESS := 4095
-
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_FONP := /sys/class/torch/torch/torch_level
+SHRP_FONP_1 := /sys/class/leds/lcd-backlight//brightness
+SHRP_FONP_2 := /sys/class/leds/lcd-backlight/led_mode
+SHRP_FONP_3 := /sys/devices/virtual/torch/torch/torch_level
+SHRP_FONP_4 :=/sys/class/flashlight_core/flashlight/flashlight_torch
