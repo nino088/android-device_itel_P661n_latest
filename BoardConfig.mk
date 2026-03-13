@@ -156,7 +156,6 @@ RECOVERY_SDCARD_ON_DATA := true
 
 TW_FRAMERATE := 90
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_MAX_BRIGHTNESS := 4095
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_THEME := portrait_hdpi
 
@@ -201,6 +200,7 @@ TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 # PB Torch
-PB_TORCH_PATH := "/sys/class/flashlight_core/flashlight/flashlight_core"
-PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
-PB_TORCH_MAX_BRIGHTNESS := 1
+PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
+TW_TORCH_PATH := "/sys/class/torch/torch/torch_level"
+TW_MAX_BRIGHTNESS := 1
+PB_MAX_BRIGHTNESS := 1
