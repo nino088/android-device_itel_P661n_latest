@@ -210,20 +210,17 @@ SHRP_OFFICIAL := true
 SHRP_INTERNAL := /sdcard
 SHRP_EXTERNAL := /sdcard1
 SHRP_OTG := /usb_otg
-SHRP_FLASH := 1
 SHRP_REC_TYPE := SAR
 SHRP_REC := /dev/block/bootdevice/by-name/vendor_boot
 SHRP_DEVICE_TYPE := A/B
 SHRP_EXPRESS := true
 SHRP_DARK := false
 SHRP_EXPRESS_USE_DATA := true
-
-# Custom led paths for flashlight
-SHRP_MAX_BRIGHTNESS := 1
+SHRP_FLASH := 1
 SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/torch/torch/torch_level
+SHRP_FONP_1 := 
+SHRP_FONP_2 := 
+SHRP_FONP_3 :=
+SHRP_FONP_4 :=
 SHRP_FLASH_MAX_BRIGHTNESS := 1
-SHRP_FONP := /sys/class/torch/torch/torch_level
-SHRP_FONP_1 := /sys/class/leds/lcd-backlight//brightness
-SHRP_FONP_2 := /sys/class/leds/lcd-backlight/led_mode
-SHRP_FONP_3 := /sys/devices/virtual/torch/torch/torch_level
-SHRP_FONP_4 :=/sys/class/flashlight_core/flashlight/flashlight_torch
