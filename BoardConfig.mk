@@ -197,6 +197,6 @@ TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 PB_TORCH_MAX_BRIGHTNESS := 1
-PB_TORCH_PATH := "/sys/devices/virtual/torch/torch/torch_level"
+PB_TORCH_PATH := /sys/devices/virtual/torch/torch/torch_level
 PB_TORCH_PATH1 := 
 
