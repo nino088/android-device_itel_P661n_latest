@@ -155,8 +155,9 @@ TW_HAS_OTG := true
 RECOVERY_SDCARD_ON_DATA := true
 
 TW_FRAMERATE := 90
+TW_MAX_BRIGHTNESS := 2047
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_DEFAULT_BRIGHTNESS := 1200
+TW_DEFAULT_BRIGHTNESS := 2000
 TW_THEME := portrait_hdpi
 
 # Tools
@@ -178,9 +179,9 @@ TW_STATUS_ICONS_ALIGN := center
 TW_CUSTOM_CLOCK_POS := 30
 TW_CUSTOM_CPU_POS := 260
 
-# Notch
-TW_INCLUDE_LAYOUT_IN_DISPLAY_CUTOUT_MODE := true
-TW_IMCLUDE_LAYOUT_IN_DISPLAY_CUTOUT_MODE_DEFAULT := true
+# Padfing
+TW_Y_OFFSET := 80
+TW_H_OFFSET := -80
 
 # FastbootD
 TW_INCLUDE_FASTBOOTD := true
@@ -199,9 +200,6 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-# PB Torch
-PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
-TW_TORCH_PATH := "/sys/class/torch/torch/torch_level"
-PB_TORCH_PATH1 := $(DEVICE_PATH)/recover/root/sys/class/torch/torch/torch_level
-TW_MAX_BRIGHTNESS := 1
-PB_MAX_BRIGHTNESS := 1
+# PBRP
+PB_TORCH_PATH := /sys/devices/virtual/torch/torch/torch_level
+PB_TORCH_MAX_BRIGHTNESS := 1
