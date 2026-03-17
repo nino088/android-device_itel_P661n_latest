@@ -8,7 +8,8 @@ export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
 export FOX_MAINTAINER_PATCH_VERSIONe="12"
 export OF_MAINTAINER="nino"
 export FOX_VARIANT="A12+"
-export OF_FLASHLIGHT_ENABLE=1
+export FOX_FLASHLIGHT_ENABLE="1"
+export FOX_FL_PATH1="/system/flashlight"
 
 # KernelSU / SukiSu support
 export FOX_ENABLE_KERNELSU_SUPPORT=1
