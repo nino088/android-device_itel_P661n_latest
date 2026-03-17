@@ -36,13 +36,6 @@ export OF_USE_LZ4_COMPRESSION=true
 # Custom time
 export FOX_DEFAULT_TIMEZONE="WAT+1"
 
-# Vendor_boot
-export FOX_RECOVERY_VENDOR_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
-export FOX_VENDOR_BOOT_RECOVERY=1
-
-# Debug
-export FOX_INSTALLER_DEBUG_MODE=1
-
 export OF_SCREEN_H=2400
 export OF_STATUS_H=95
 export OF_STATUS_INDENT_LEFT=48
