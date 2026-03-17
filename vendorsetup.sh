@@ -6,11 +6,12 @@ export FOX_VIRTUAL_AB_DEVICE=1
 export OF_DEFAULT_KEYMASTER_VERSION=4.1
 export OF_TWRP_COMPATIBILITY_MODE=1
 export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
-export FOX_MAINTAINER_PATCH_VERSIONe="12"
+export FOX_MAINTAINER_PATCH_VERSIONe="14"
 export OF_MAINTAINER="nino"
-export FOX_VARIANT="A12+"
+export FOX_VARIANT="A13+"
 export FOX_FLASHLIGHT_ENABLE="1"
 export FOX_FL_PATH1="/system/flashlight"
+export FOX_FL_PATH2="/sys/class/torch/torch/torch_level"
 
 # KernelSU / SukiSu support
 export FOX_ENABLE_KERNELSU_SUPPORT=1
