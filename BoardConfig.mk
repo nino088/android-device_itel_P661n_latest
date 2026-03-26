@@ -156,8 +156,9 @@ TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_FRAMERATE := 60
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
-TW_DEFAULT_BRIGHTNESS := 1200
 TW_THEME := portrait_hdpi
+TW_MAX_BRIGHTNESS := 2047
+TW_DEFAULT_BRIGHTNESS := 1200
 
 # Tools
 TW_INCLUDE_FB2PNG := true
@@ -171,11 +172,6 @@ TW_EXCLUDE_APEX := true
 
 # No recovery partition
 TW_HAS_NO_RECOVERY_PARTITION := true
-
-# StatusBar
-TW_STATUS_ICONS_ALIGN := center
-TW_CUSTOM_CLOCK_POS := 40
-TW_CUSTOM_CPU_POS := 270
 
 # FastbootD
 TW_INCLUDE_FASTBOOTD := true
