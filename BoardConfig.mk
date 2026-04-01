@@ -196,7 +196,5 @@ TW_LOAD_VENDOR_BOOT_MODULES := true
 TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
-PB_TORCH_MAX_BRIGHTNESS := 1
-PB_TORCH_PATH := "/system/flashlight"
-PB_TORCH_PATH1 := 
-
+# Pitchblack Torch
+PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
