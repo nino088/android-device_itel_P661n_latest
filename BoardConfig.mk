@@ -197,4 +197,6 @@ TW_DEVICE_VERSION := nino
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 
 # Pitchblack Torch
-PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
+PB_TORCH_PATH := /sys/class/leds/flashlight
+PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
+PB_TORCH_MAX_BRIGHTNESS := 1
