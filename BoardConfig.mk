@@ -202,6 +202,5 @@ PB_ENABLE_NOTCH := true
 PB_INCLUDE_NOTCH := true
 
 # Pb Torch
-PB_TORCH_PATH := "/sys/class/leds/flashlight"
-PB_TORCH_PATH1 := "/sys/class/torch/torch/torch_level"
+PB_TORCH_PATH := "/sys/class/torch/torch/torch_level"
 PB_TORCH_MAX_BRIGHTNESS := 1
