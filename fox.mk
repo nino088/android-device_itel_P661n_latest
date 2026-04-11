@@ -17,14 +17,17 @@
 #
 # 	Please maintain this if you use this script or any part of it
 #
+
 # maintainer
-OF_MAINTAINER := Nazephyrus
+OF_MAINTAINER := nino
+
 # screen settings
 OF_SCREEN_H := 2460
 OF_STATUS_H := 95
 OF_STATUS_INDENT_LEFT := 48
 OF_STATUS_INDENT_RIGHT := 48
 OF_CLOCK_POS := 1
+
 # other stuff
 OF_QUICK_BACKUP_LIST := /boot;/data;
 OF_ENABLE_LPTOOLS := 1
@@ -32,24 +35,33 @@ OF_NO_TREBLE_COMPATIBILITY_CHECK := 1
 OF_FLASHLIGHT_ENABLE := 0
 OF_FORCE_CASEFOLDING := 1
 OF_DYNAMIC_FULL_SIZE := 9125756928
+
 # number of list options before scrollbar creation
 OF_OPTIONS_LIST_NUM := 9
-# ----- data format stuff -----
+
 # ensure that /sdcard is bind-unmounted before f2fs data repair or format
 OF_UNBIND_SDCARD_F2FS := 1
+
 # Called just before formatting /data; only useful for devices/ROMs that have dynamic partitions
 OF_USE_DMCTL := 1
+
 # automatically wipe /metadata after data format
 OF_WIPE_METADATA_AFTER_DATAFORMAT := 1
+
 # avoid MTP issues after data format
 OF_BIND_MOUNT_SDCARD_ON_FORMAT := 1
+
 # don't spam the console with loop errors
 OF_LOOP_DEVICE_ERRORS_TO_LOG := 1
+
 # lz4 compression
 OF_USE_LZ4_COMPRESSION := 1
+
 # build all the partition tools
 OF_ENABLE_ALL_PARTITION_TOOLS := 1
+
 # Set this to 1 to include an addon for removing factory reset protection (FRP)
 OF_ENABLE_FRP_ADDON := 1
+
 # keymaster
 OF_DEFAULT_KEYMASTER_VERSION=4.1
