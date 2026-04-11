@@ -21,6 +21,9 @@ $(call inherit-product, vendor/twrp/config/common.mk)
 # Inherit from P661N device
 $(call inherit-product, device/itel/P661N/device.mk)
 
+# Include Fox props
+$(call inherit-product, device/itel/P661N/fox.mk)
+
 PRODUCT_DEVICE := P661N
 PRODUCT_NAME := twrp_P661N
 PRODUCT_BRAND := ITEL
