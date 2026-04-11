@@ -1,68 +1,49 @@
-#!/bin/bash
+#
+#	This file is part of the OrangeFox Recovery Project
+# 	Copyright (C) 2025 The OrangeFox Recovery Project
+#
+#	OrangeFox is free software: you can redistribute it and/or modify
+#	it under the terms of the GNU General Public License as published by
+#	the Free Software Foundation, either version 3 of the License, or
+#	any later version.
+#
+#	OrangeFox is distributed in the hope that it will be useful,
+#	but WITHOUT ANY WARRANTY; without even the implied warranty of
+#	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#	GNU General Public License for more details.
+#
+# 	This software is released under GPL version 3 or any later version.
+#	See <http://www.gnu.org/licenses/>.
+#
+# 	Please maintain this if you use this script or any part of it
+#
 
-export OF_DISABLE_OTA_MENU=1
-export FOX_AB_DEVICE=1
+#device
+export FOX_TARGET_DEVICES=P661N
+export TARGET_DEVICE_ALT=P661N
+
+# other
 export FOX_VIRTUAL_AB_DEVICE=1
-export OF_DEFAULT_KEYMASTER_VERSION=4.1
-export OF_TWRP_COMPATIBILITY_MODE=1
-export OF_NO_TREBLE_COMPATIBILITY_CHECK=1
-export FOX_MAINTAINER_PATCH_VERSIONe="14"
-export OF_MAINTAINER="nino"
-export FOX_VARIANT="A13+"
-export FOX_FLASHLIGHT_ENABLE="1"
-export FOX_FL_PATH1="/system/flashlight"
-export FOX_FL_PATH2="/sys/class/torch/torch/torch_level"
-
-# KernelSU / SukiSu support
-export FOX_ENABLE_KERNELSU_SUPPORT=1
-export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
-export FOX_ENABLE_SUKISU_SUPPORT=1
- 
-export FOX_USE_BASH_SHELL=1
-export FOX_USE_NANO_EDITOR=1
-export FOX_USE_TAR_BINARY=1
-export FOX_USE_SED_BINARY=1
-export FOX_USE_XZ_UTILS=1
-export FOX_ASH_IS_BASH=1
-export OF_ENABLE_LPTOOLS=1
-export FOX_DELETE_MAGISK_ADDON=1
-export FOX_DELETE_AROMAFM=1
 export FOX_ENABLE_APP_MANAGER=1
-export OF_SUPPORT_VBMETA_AVB2_PATCHING=1
+export FOX_VENDOR_BOOT_RECOVERY=1
+export FOX_RECOVERY_VENDOR_BOOT_PARTITION="/dev/block/by-name/vendor_boot"
+export FOX_RECOVERY_SYSTEM_PARTITION="/dev/block/mapper/system"
+export FOX_RECOVERY_VENDOR_PARTITION="/dev/block/mapper/vendor"
+export FOX_USE_XZ_UTILS=1
+export FOX_USE_BASH_SHELL=1
+export FOX_ASH_IS_BASH=1
+export FOX_USE_TAR_BINARY=1
+export FOX_USE_LZ4_BINARY=1
+export FOX_USE_SED_BINARY=1
+export FOX_USE_ZSTD_BINARY=1
+export FOX_USE_NANO_EDITOR=1
+export FOX_USE_UPDATED_MAGISKBOOT=1
+export FOX_DELETE_AROMAFM=1
+export FOX_USE_DATE_BINARY=1
+export FOX_BUILD_TYPE="stable"
 
-export FOX_USE_DATA_RECOVERY_FOR_SETTINGS=0
-export OF_LOOP_DEVICE_ERRORS_TO_LOG=1
-
-export OF_USE_LZMA_COMPRESSION=1
-
-# Device Use only vendor_boot as ramdisk
-export FOX_INSTALLER_VENDOR_BOOT_RAMDISK_INSTALL=1
-
-# Early settings
-export FOX_ALLOW_EARLY_SETTINGS_LOAD=1
-
-# Custom time
-export FOX_DEFAULT_TIMEZONE="WAT+1"
-
-export OF_SCREEN_H=2000
-export OF_STATUS_H=72
-export OF_STATUS_INDENT_LEFT=48
-export OF_STATUS_INDENT_RIGHT=48
-export OF_ALLOW_DISABLE_NAVBAR=0
-export OF_CLOCK_POS=1
-
-export USE_CCACHE=1
-export CCACHE_EXEC=/usr/bin/ccache
-export CCACHE_MAXSIZE="5G"
-export CCACHE_DIR="~/ccache"
-
-if [ ! -d ${CCACHE_DIR} ];
-then
-  echo "CCACHE Directory/Partition is not mounted at \"${CCACHE_DIR}\""
-  echo "Please edit the CCACHE_DIR build variable or mount the directory."
-fi
-
-export LC_ALL="C"
-
-# Clone to fix build on minimal manifest
-git clone https://android.googlesource.com/platform/external/gflags/ -b android-12.1.0_r4 external/gflags
+# KSU, etc.
+	export FOX_ENABLE_KERNELSU_SUPPORT=1
+	export FOX_ENABLE_KERNELSU_NEXT_SUPPORT=1
+	export FOX_ENABLE_SUKISU_SUPPORT=1
+ 
