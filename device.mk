@@ -94,9 +94,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.system.keystore2
 
+PRODUCT_PACKAGES += \
+    bootctrl.mt6833 \
+    bootctrl.mt6833.recovery
+
 # Vibrator modules
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hardware.vibrator-V2-ndk.so
+
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V2-ndk.so
 
 # Update engine
 PRODUCT_PACKAGES += \
